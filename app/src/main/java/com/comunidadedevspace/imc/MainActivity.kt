@@ -23,15 +23,31 @@ class MainActivity : AppCompatActivity() {
 
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
-       btnCalcular.setOnClickListener {
-           val peso: Float = edtPeso.text.toString().toFloat()
-           val altura: Float = edtAltura.text.toString().toFloat()
+        btnCalcular.setOnClickListener {
 
-           val alturaQ2 = altura * altura
-           val resultado = peso / alturaQ2
+           val pesoStr: String = edtPeso.text.toString()
+           val alturaStr: String = edtAltura.text.toString()
 
-           println("Hugo acao do botao" + resultado)
+           if(pesoStr == "" || alturaStr == "") {
+               // Mostrar mensagem para o usuario
+
+               Snackbar.make(
+                   edtPeso,
+                   "Preencha todos os campos",
+                   Snackbar.LENGTH_LONG
+               )
+                   .show()
+           } else {
+               val peso = pesoStr.toFloat()
+               val altura = alturaStr.toFloat()
+
+               val alturaQ2 = altura * altura
+               val resultado = peso / alturaQ2
+
+               println("Hugo acao do botao" + resultado)
+           }
        }
+
 
     }
 }
