@@ -12,46 +12,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val edtpeso = findViewById<TextInputEditText>(R.id.edt_peso)
-        val edtAltura = findViewById<TextInputEditText>(R.id.edt_altua)
+        // Recuperar os componentes EditText
+         //  Criar uma variavel e associar o componente de UI<EditText>
+        // Recuperar o botão da tela
+        // Colocar acao no botao
+        // recuperar o texto digitado no edtPeso
+
+        val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
+        val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
 
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
-        btnCalcular.setOnClickListener {
-
-            val pesoStr: String = edtpeso.text.toString()
-            val alturaStr: String = edtAltura.text.toString()
-
-            if (pesoStr == "" || alturaStr == ""){
-
-                Snackbar.make(
-                    edtpeso,
-                    "Preencha todos os camps",
-                    Snackbar.LENGTH_LONG
-                ).show()
-            } else {
-
-                val peso = pesoStr.toFloat()
-                val altura = alturaStr.toFloat()
-
-                val alturaQ2 = altura * altura
-                val resultado = peso / alturaQ2
-
-                // Navegar para a proxima tela
-                // Criar o layout da proxima tela
-                // Passar dados para a proxima tela
-
-                // Intent -  Classe do proprio android
-
-                val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra(KEY_RESULT_IMC, resultado)
-                startActivity(intent)
-
-                println("Hugo acao do botao " + resultado)
-            }
-
-        }
-
+       btnCalcular.setOnClickListener {
+           val peso = edtPeso.text
+           val altura = edtAltura.text
+           println("Hugo acao do botao" + peso + altura)
+       }
 
     }
 }
