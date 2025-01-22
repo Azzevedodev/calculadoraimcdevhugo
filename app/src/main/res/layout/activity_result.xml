@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ResultActivity">
 
     <TextView
@@ -19,17 +19,16 @@
         tools:text="23.66" />
 
     <TextView
-        android:id="@+id/tv_classificacao_label"
+        android:id="@+id/classificacao_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A Classificação do seu imc é:" />
+        android:text="A classificação do seu imc é:"/>
+
 
     <TextView
         android:id="@+id/tv_classificacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        tools:text="NORMAL" />
-
-
+        tools:text="NORMAL"/>
 </LinearLayout>
