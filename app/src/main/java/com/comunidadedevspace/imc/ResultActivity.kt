@@ -30,10 +30,30 @@ class ResultActivity : AppCompatActivity() {
         } else if (result > 30f && result <= 39.9f) {
             "OBESIDADE"
         } else {
-            "OBESIDADE GRAVE"
+            "OBESIDADEGRAVE"
         }
 
         tvClassificao.text = classificacao
+
+        val imc = 25.0
+        val classificacao1: String = when {
+            imc < 18.5 -> "MAGREZA"
+            imc in 18.5..24.9 -> "NORMAL"
+            imc in 25f..29.9f -> "SOBREPESO"
+            imc in 30f..39f -> "OBESIDADE"
+            else -> "OBESIDADEGRAVE"
+        }
+
+        tvClassificao.text = classificacao
+
+        when (classificacao) {
+            "MAGREZA" -> tvClassificao.setTextColor(resources.getColor(R.color.MAGREZA))
+            "NORMAL" -> tvClassificao.setTextColor(resources.getColor(R.color.NORMAL))
+            "SOBREPESO" -> tvClassificao.setTextColor(resources.getColor(R.color.SOBREPESO))
+            "OBESIDADE" -> tvClassificao.setTextColor(resources.getColor(R.color.OBESIDADE))
+            "OBESIDADEGRAVE" -> tvClassificao.setTextColor(resources.getColor(R.color.OBESIDADEGRAVE))
+
+        }
 
     }
 }

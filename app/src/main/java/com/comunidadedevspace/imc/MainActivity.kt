@@ -36,16 +36,15 @@ class MainActivity : AppCompatActivity() {
 
                val alturaQ2 = altura * altura
                val resultado = peso / alturaQ2
-
-               // Navegar para a proxima tela
-               // Criar um layout da proxima tela
-               // Passar dados (resultado) para a proxima tela
-
-               // Intent -  Classe do proprio android
+               0
 
                val intent = Intent(this, ResultActivity::class.java)
                intent.putExtra(KEY_RESULT_IMC, resultado)
                startActivity(intent)
+
+               // Cores
+               // EditText background + Icone
+               // Gradiente + titulo + descrição
 
 
 
