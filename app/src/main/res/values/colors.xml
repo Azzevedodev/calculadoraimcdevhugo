@@ -5,4 +5,10 @@
 
     <color name="primary_400">#cd00ea</color>
     <color name="primary_900">#5c00d2</color>
+
+    <color name="MAGREZA">#FF8C00</color>
+    <color name="NORMAL">#008000</color>
+    <color name="SOBREPESO">#4B0082</color>
+    <color name="OBESIDADE">#FF4500</color>
+    <color name="OBESIDADEGRAVE">#8B0000</color>
 </resources>
