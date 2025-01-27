@@ -36,19 +36,11 @@ class MainActivity : AppCompatActivity() {
 
                val alturaQ2 = altura * altura
                val resultado = peso / alturaQ2
-               0
+
 
                val intent = Intent(this, ResultActivity::class.java)
                intent.putExtra(KEY_RESULT_IMC, resultado)
                startActivity(intent)
-
-               // Cores
-               // EditText background + Icone
-               // Gradiente + titulo + descrição
-
-
-
-               println("Hugo acao do botao" + resultado)
            }
        }
 
