@@ -3,7 +3,7 @@ Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem kotlin
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/user-attachments/assets/67e9783f-8229-4304-8429-5f27f25ae082" width=260/> <img src="https://github.com/user-attachments/assets/ad0b29cd-404f-46cb-83e0-95ecf25b32e4" width=260/>
+<img src="https://github.com/user-attachments/assets/d22c7c59-8d8a-495e-ac10-0f7c70fbecef" width=260/> <img src="https://github.com/user-attachments/assets/5f620f9a-2094-46bc-bcbb-94046c7dfc0f" width=260/>
 
 
 ## Tecnologias
